@@ -2,7 +2,7 @@
  * Copyright (C) 2019-present The Kraken authors. All rights reserved.
  */
 import 'dart:core';
-import 'dart:ffi';
+import 'dart:ffi' hide Size;
 import 'dart:typed_data';
 import 'dart:ui';
 

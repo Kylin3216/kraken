@@ -46,7 +46,9 @@ double computeSwipeSlop(PointerDeviceKind kind) {
     case PointerDeviceKind.invertedStylus:
     case PointerDeviceKind.unknown:
     case PointerDeviceKind.touch:
+    case PointerDeviceKind.trackpad:
       return kSwipeSlop;
+      break;
   }
 }
 

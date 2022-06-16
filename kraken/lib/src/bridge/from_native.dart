@@ -3,7 +3,7 @@
  */
 
 import 'dart:convert';
-import 'dart:ffi';
+import 'dart:ffi' hide Size;
 import 'dart:typed_data';
 import 'dart:ui';
 

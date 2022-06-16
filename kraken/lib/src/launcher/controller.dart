@@ -5,7 +5,7 @@
 import 'dart:async';
 import 'dart:collection';
 import 'dart:convert';
-import 'dart:ffi';
+import 'dart:ffi' hide Size;
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui' as ui;

@@ -1431,6 +1431,21 @@ class TextFormControlElement extends Element implements TextInputClient, TickerP
     textEditingActionTarget = null;
     super.dispose();
   }
+
+  @override
+  void insertTextPlaceholder(Size size) {
+    textSelectionDelegate.insertTextPlaceholder(size);
+  }
+
+  @override
+  void removeTextPlaceholder() {
+    textSelectionDelegate.removeTextPlaceholder();
+  }
+
+  @override
+  void showToolbar() {
+    textSelectionDelegate.showToolbar();
+  }
 }
 
 
