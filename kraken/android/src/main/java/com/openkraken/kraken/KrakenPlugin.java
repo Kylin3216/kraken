@@ -22,22 +22,6 @@ public class KrakenPlugin implements FlutterPlugin, MethodCallHandler {
     private Context mContext;
     private Kraken mKraken;
 
-    // This static function is optional and equivalent to onAttachedToEngine. It supports the old
-    // pre-Flutter-1.12 Android projects. You are encouraged to continue supporting
-    // plugin registration via this function while apps migrate to use the new Android APIs
-    // post-flutter-1.12 via https://flutter.dev/go/android-project-migration.
-    //
-    // It is encouraged to share logic between onAttachedToEngine and registerWith to keep
-    // them functionally equivalent. Only one of onAttachedToEngine or registerWith will be called
-    // depending on the user's project. onAttachedToEngine or registerWith must both be defined
-    // in the same class.
-    public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "kraken");
-        KrakenPlugin plugin = new KrakenPlugin();
-        plugin.mContext = registrar.context();
-        channel.setMethodCallHandler(plugin);
-    }
-
     @Override
     public void onAttachedToEngine(FlutterPluginBinding flutterPluginBinding) {
         mContext = flutterPluginBinding.getApplicationContext();
